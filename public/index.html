@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
+   <!-- include only the Firebase features as you need  -->
+  <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-functions.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-analytics.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-remote-config.js"></script>
+  <script defer src="/__/firebase/8.1.1/firebase-performance.js"></script>
+  
+    <!-- initialize the SDK after all desired features are loaded, set useEmulator to false
+    to avoid connecting the SDK to running emulators. -->
+  
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>  
+
+  <style>
+    table, th, td {
+      border:  solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  
+</head>
+
+<body>    
+  
+  <!-- <form id="docs" >
+    <div>
+      <label style="font-weight: bold;">Document Name : </label>
+      <input id="docName" type="text" placeholder="Enter document name">
+    </div><br>
+      <label style="font-weight: bold;">Name : </label>
+      <input id="name" type="text" placeholder="Enter Your Name">
+    </div>
+    <br>
+    <div></div>
+    <div><br>
+      <label style="font-weight: bold;">Designation : </label>
+      <input id="des" type="text" autocomplete="off" placeholder="Enter Your Designation">
+    </div>
+    <div></div>
+    <br>
+    <button type="button" class="btn btn-secondary" onclick="onSubmit()" >Submit</button>
+  </form><br><br>  -->
+
+  <form id="docs" >
+      <br><br><br>
+      <div>       
+          <button id="tin" type="button" class="btn btn-secondary" onclick="timeIn()">Time In</button>
+          <input id="time" type="text">          
+               
+          <button id="tout" type="button" class="btn btn-secondary" onclick="timeOut()">Time Out</button>
+          <input id="time1" type="text">  
+      </div>
+      <br><br><br><br>
+    <div>
+      <label style="font-weight: bold;">Document Name</label>
+      <input id="docName" type="text" placeholder="Enter document name">
+    </div><br>
+      <label style="font-weight: bold;">Company Name</label>
+      <input id="dName" type="text" placeholder="Enter Your Compny Name">
+    </div>
+    <br>
+    <div></div>
+    <div><br>
+      <label style="font-weight: bold;">Employee Name</label>
+      <input id="name" type="text" autocomplete="off" placeholder="Enter Your Employee Name">
+    </div>
+    <div></div>
+       
+    <br>
+    <button type="button" class="btn btn-secondary" onclick="onSubmit()">Submit</button>
+  </form><br><br>  
+
+  <!-- <table id="view">
+    <tr>
+      <th>Document</th>
+      <th>Company Name</th>
+      <th>Employee Name</th>    
+      <th>Time In</th>
+      <th>Time Out</th>
+      <th>Delete</th>
+      <th>Edit</th>
+    </tr>      
+  </table>
+  <br>
+  <button onclick="ExportToExcel()">Excel</button>   -->
+
+  <script src="index.js"> </script>    
+</body>
+</html>
